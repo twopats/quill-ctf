@@ -1,0 +1,35 @@
+{
+  "transactions": [
+    {
+      "hash": "0xe8cb51825a256f5b6417a09f3e161d8a564661d898c0468544e683aafe5c397c",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0xD2372EB76C559586bE0745914e9538C17878E812",
+      "function": null,
+      "arguments": null,
+      "rpc": "https://rpc.ankr.com/eth_goerli",
+      "transaction": {
+        "type": "0x02",
+        "from": "0xe351a23bb54f4a7ca10156ea9d82858c16d69e30",
+        "to": "0xd2372eb76c559586be0745914e9538c17878e812",
+        "gas": "0x9e4e",
+        "value": "0x0",
+        "data": "0xa6f9dae1000000000000000000000000e351a23bb54f4a7ca10156ea9d82858c16d69e30",
+        "nonce": "0x8f",
+        "accessList": []
+      },
+      "additionalContracts": []
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [
+    "0xe8cb51825a256f5b6417a09f3e161d8a564661d898c0468544e683aafe5c397c"
+  ],
+  "path": "/home/msipat/code/quill-ctf/broadcast/HackRoadClosed.s.sol/5/run-latest.json",
+  "returns": {},
+  "timestamp": 1671853766,
+  "chain": 5,
+  "multi": false,
+  "commit": "50e8c7c"
+}

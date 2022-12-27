@@ -1,0 +1,50 @@
+{
+  "transactions": [
+    {
+      "hash": "0xb4154a7092c48db20ab76cbdc5481a91e0eaffdf1fbe245d499aefa6f2562fce",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0xD2372EB76C559586bE0745914e9538C17878E812",
+      "function": null,
+      "arguments": null,
+      "rpc": "https://rpc.ankr.com/eth_goerli",
+      "transaction": {
+        "type": "0x02",
+        "from": "0xe351a23bb54f4a7ca10156ea9d82858c16d69e30",
+        "to": "0xd2372eb76c559586be0745914e9538c17878e812",
+        "gas": "0x848b",
+        "value": "0x0",
+        "data": "0x02c6591d000000000000000000000000e351a23bb54f4a7ca10156ea9d82858c16d69e30",
+        "nonce": "0x90",
+        "accessList": []
+      },
+      "additionalContracts": []
+    }
+  ],
+  "receipts": [
+    {
+      "transactionHash": "0xb4154a7092c48db20ab76cbdc5481a91e0eaffdf1fbe245d499aefa6f2562fce",
+      "transactionIndex": "0x2",
+      "blockHash": "0xb0a8c1ada7a5569eaac18da56d4f2652d726c291c7f3a58ee5c8bc70c81b8119",
+      "blockNumber": "0x7cf8f0",
+      "from": "0xe351A23BB54F4a7Ca10156eA9d82858C16D69E30",
+      "to": "0xD2372EB76C559586bE0745914e9538C17878E812",
+      "cumulativeGasUsed": "0x13854",
+      "gasUsed": "0x5ff6",
+      "contractAddress": null,
+      "logs": [],
+      "status": "0x1",
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "type": "0x2",
+      "effectiveGasPrice": "0xb2d05e0b"
+    }
+  ],
+  "libraries": [],
+  "pending": [],
+  "path": "/home/msipat/code/quill-ctf/broadcast/HackRoadClosed.s.sol/5/run-latest.json",
+  "returns": {},
+  "timestamp": 1671854616,
+  "chain": 5,
+  "multi": false,
+  "commit": "50e8c7c"
+}

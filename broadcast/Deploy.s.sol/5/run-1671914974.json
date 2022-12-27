@@ -1,0 +1,34 @@
+{
+  "transactions": [
+    {
+      "hash": "0xfb25d4c05d9e55bad87ad2c7d74b97aca0212288451e1a61bb4c9bb1e3043042",
+      "transactionType": "CREATE",
+      "contractName": "Solution",
+      "contractAddress": "0x16cf1d659560E831fD7Fe4217251390D1e42d042",
+      "function": null,
+      "arguments": null,
+      "rpc": "https://rpc.ankr.com/eth_goerli",
+      "transaction": {
+        "type": "0x02",
+        "from": "0xe351a23bb54f4a7ca10156ea9d82858c16d69e30",
+        "gas": "0x1fb71",
+        "value": "0x0",
+        "data": "0x6080604052600080546001600160a01b0319167328e42e7c4bda7c0381da503240f2e54c70226be2179055348015603557600080fd5b50606e806100446000396000f3fe608060405260043610601c5760003560e01c80639e5faafc146021575b600080fd5b60276029565b005b6000546001600160a01b031680fffea26469706673582212207021236a9bd3dfd51b0fbfbdd4e8a236b7cd789ebbccf68f046f7a5cf6a348e164736f6c63430008110033",
+        "nonce": "0x93",
+        "accessList": []
+      },
+      "additionalContracts": []
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [
+    "0xfb25d4c05d9e55bad87ad2c7d74b97aca0212288451e1a61bb4c9bb1e3043042"
+  ],
+  "path": "/home/msipat/code/quill-ctf/broadcast/Deploy.s.sol/5/run-latest.json",
+  "returns": {},
+  "timestamp": 1671914974,
+  "chain": 5,
+  "multi": false,
+  "commit": "50e8c7c"
+}
