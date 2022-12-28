@@ -1,0 +1,50 @@
+{
+  "transactions": [
+    {
+      "hash": "0x3191d131f9615d95611d1c97618df8a59a6b7e7be8bba0ec20535251eb121465",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0x5936283B38D0cFb519c4823eCF3e3a23cD9be3Ff",
+      "function": null,
+      "arguments": null,
+      "rpc": "https://rpc.ankr.com/eth_goerli",
+      "transaction": {
+        "type": "0x02",
+        "from": "0xf4ce225b2beafa65cc155a9de1b1a41ff5eb3b61",
+        "to": "0x5936283b38d0cfb519c4823ecf3e3a23cd9be3ff",
+        "gas": "0x13613",
+        "value": "0x2386f26fc10000",
+        "data": "0xa6f2ae3a",
+        "nonce": "0xf",
+        "accessList": []
+      },
+      "additionalContracts": []
+    }
+  ],
+  "receipts": [
+    {
+      "transactionHash": "0x3191d131f9615d95611d1c97618df8a59a6b7e7be8bba0ec20535251eb121465",
+      "transactionIndex": "0x0",
+      "blockHash": "0x5a3219a62552d95696c7bd3b5ec8388f4e513482cb5cd877ceb80423c5031bc6",
+      "blockNumber": "0x7d5fff",
+      "from": "0xf4CE225b2beaFA65CC155a9dE1B1a41FF5EB3B61",
+      "to": "0x5936283B38D0cFb519c4823eCF3e3a23cD9be3Ff",
+      "cumulativeGasUsed": "0xe07e",
+      "gasUsed": "0xe07e",
+      "contractAddress": null,
+      "logs": [],
+      "status": "0x1",
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "type": "0x2",
+      "effectiveGasPrice": "0xc7ea648f"
+    }
+  ],
+  "libraries": [],
+  "pending": [],
+  "path": "/home/sdpat/code/quill-ctf/broadcast/Deploy.s.sol/5/run-latest.json",
+  "returns": {},
+  "timestamp": 1672249407,
+  "chain": 5,
+  "multi": false,
+  "commit": "ff1a3ce"
+}

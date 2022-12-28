@@ -1,0 +1,35 @@
+{
+  "transactions": [
+    {
+      "hash": "0x7b3a438bcccf6998c932a9a3ae9484811219e11d1b2397f126af512a80978e4a",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0xeE077Af6f53D7abd3006794aF07f1eFF5305363D",
+      "function": null,
+      "arguments": null,
+      "rpc": "https://rpc.ankr.com/eth_goerli",
+      "transaction": {
+        "type": "0x02",
+        "from": "0xf4ce225b2beafa65cc155a9de1b1a41ff5eb3b61",
+        "to": "0xee077af6f53d7abd3006794af07f1eff5305363d",
+        "gas": "0x13613",
+        "value": "0x2386f26fc10000",
+        "data": "0xa6f2ae3a",
+        "nonce": "0x5",
+        "accessList": []
+      },
+      "additionalContracts": []
+    }
+  ],
+  "receipts": [],
+  "libraries": [],
+  "pending": [
+    "0x7b3a438bcccf6998c932a9a3ae9484811219e11d1b2397f126af512a80978e4a"
+  ],
+  "path": "/home/sdpat/code/quill-ctf/broadcast/Deploy.s.sol/5/run-latest.json",
+  "returns": {},
+  "timestamp": 1672237304,
+  "chain": 5,
+  "multi": false,
+  "commit": "ff1a3ce"
+}

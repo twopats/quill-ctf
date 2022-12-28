@@ -1,0 +1,50 @@
+{
+  "transactions": [
+    {
+      "hash": "0xf2a30a916e260f08c60c08620fc545194f3cbcf83877043f2380a58de714622b",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0x4C50d74d5D3B2688d60442569b5326cF87F51dE9",
+      "function": null,
+      "arguments": null,
+      "rpc": "https://rpc.ankr.com/eth_goerli",
+      "transaction": {
+        "type": "0x02",
+        "from": "0xf4ce225b2beafa65cc155a9de1b1a41ff5eb3b61",
+        "to": "0x4c50d74d5d3b2688d60442569b5326cf87f51de9",
+        "gas": "0xd6a1",
+        "value": "0x2386f26fc10000",
+        "data": "0xa6f2ae3a",
+        "nonce": "0xc",
+        "accessList": []
+      },
+      "additionalContracts": []
+    }
+  ],
+  "receipts": [
+    {
+      "transactionHash": "0xf2a30a916e260f08c60c08620fc545194f3cbcf83877043f2380a58de714622b",
+      "transactionIndex": "0x17",
+      "blockHash": "0x0f74ce2125131580d14d9addffe8b83464019c16676f2912af0931a836b0bee5",
+      "blockNumber": "0x7d5e10",
+      "from": "0xf4CE225b2beaFA65CC155a9dE1B1a41FF5EB3B61",
+      "to": "0x4C50d74d5D3B2688d60442569b5326cF87F51dE9",
+      "cumulativeGasUsed": "0x44b16a",
+      "gasUsed": "0x92c2",
+      "contractAddress": null,
+      "logs": [],
+      "status": "0x1",
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "type": "0x2",
+      "effectiveGasPrice": "0x15b2265dc"
+    }
+  ],
+  "libraries": [],
+  "pending": [],
+  "path": "/home/sdpat/code/quill-ctf/broadcast/Deploy.s.sol/5/run-latest.json",
+  "returns": {},
+  "timestamp": 1672241741,
+  "chain": 5,
+  "multi": false,
+  "commit": "ff1a3ce"
+}

@@ -1,0 +1,50 @@
+{
+  "transactions": [
+    {
+      "hash": "0xa0a0a406047fcdbc52868d7b43823a242839e0dce114f4a2d3ce35bb8f030715",
+      "transactionType": "CALL",
+      "contractName": null,
+      "contractAddress": "0x4bE25bcb0E45b7A5f0895d914913321723819F93",
+      "function": null,
+      "arguments": null,
+      "rpc": "https://rpc.ankr.com/eth_goerli",
+      "transaction": {
+        "type": "0x02",
+        "from": "0xf4ce225b2beafa65cc155a9de1b1a41ff5eb3b61",
+        "to": "0x4be25bcb0e45b7a5f0895d914913321723819f93",
+        "gas": "0x13613",
+        "value": "0x2386f26fc10000",
+        "data": "0xa6f2ae3a",
+        "nonce": "0x11",
+        "accessList": []
+      },
+      "additionalContracts": []
+    }
+  ],
+  "receipts": [
+    {
+      "transactionHash": "0xa0a0a406047fcdbc52868d7b43823a242839e0dce114f4a2d3ce35bb8f030715",
+      "transactionIndex": "0x1",
+      "blockHash": "0x7d9d3a209ec33e61f322753ccf70db50c44c7fb70f39dcbd900998b4d693fd2b",
+      "blockNumber": "0x7d605b",
+      "from": "0xf4CE225b2beaFA65CC155a9dE1B1a41FF5EB3B61",
+      "to": "0x4bE25bcb0E45b7A5f0895d914913321723819F93",
+      "cumulativeGasUsed": "0x13286",
+      "gasUsed": "0xe07e",
+      "contractAddress": null,
+      "logs": [],
+      "status": "0x1",
+      "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "type": "0x2",
+      "effectiveGasPrice": "0xb835299c"
+    }
+  ],
+  "libraries": [],
+  "pending": [],
+  "path": "/home/sdpat/code/quill-ctf/broadcast/Deploy.s.sol/5/run-latest.json",
+  "returns": {},
+  "timestamp": 1672250718,
+  "chain": 5,
+  "multi": false,
+  "commit": "ff1a3ce"
+}
