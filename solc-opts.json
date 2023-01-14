@@ -1,0 +1,8 @@
+{
+    "language": "Yul",
+    "sources": { "input.yul": { "content": "{ sstore(0, 1) }" } },
+    "settings": {
+        "outputSelection": { "*": { "*": ["*"], "": [ "*" ] } },
+        "optimizer": { "enabled": true, "details": { "yul": true } }
+    }
+}

@@ -2,7 +2,7 @@
 
 source .env
 forge script ./script/Deploy.s.sol --private-key $PK --rpc-url $GOERLI_RPC --broadcast 
-# cast call $SOLUTION_ADDRESS "onERC721Received()" --rpc-url $GOERLI_RPC --private-key $PK 
+# cast call 0x971e55F02367DcDd1535A7faeD0a500B64f2742d "hacked()" --rpc-url $GOERLI_RPC --private-key $PK  
 
 # cast storage 0xf8E9327E38Ceb39B1Ec3D26F5Fad09E426888E66 3 --rpc-url $GOERLI_RPC
 # cast storage 0xf8E9327E38Ceb39B1Ec3D26F5Fad09E426888E66 8 --rpc-url $GOERLI_RPC
