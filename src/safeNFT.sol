@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.8.7;
+pragma solidity ^0.8.7;
 
 import "../lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol";
 import "../instances/safeNFT.sol";
