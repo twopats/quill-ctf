@@ -1,7 +1,8 @@
 import { HardhatUserConfig } from "hardhat/config";
-import "hardhat-preprocessor";
+// import "hardhat-preprocessor";
 import fs from "fs";
-import "@tovarishfin/hardhat-yul";
+// import "@tovarishfin/hardhat-yul";
+import "hardhat-deploy";
 import "@nomicfoundation/hardhat-toolbox";
 
 function getRemappings() {
@@ -14,21 +15,20 @@ function getRemappings() {
 
 const config: HardhatUserConfig = {
   solidity: "0.8.17",
-  preprocess: {
-    eachLine: (hre) => ({
-      transform: (line: string) => {
-        if (line.match(/^\s*import /i)) {
-          for (const [from, to] of getRemappings()) {
-            if (line.includes(from)) {
-              line = line.replace(from, to);
-              break;
-            }
-          }
-        }
-        return line;
-      },
-    }),
-  },
+  // preprocess: {
+  //   eachLine: (hre) => ({
+  //     transform: (line: string) => { //       if (line.match(/^\s*import /i)) {
+  //         for (const [from, to] of getRemappings()) {
+  //           if (line.includes(from)) {
+  //             line = line.replace(from, to);
+  //             break;
+  //           }
+  //         }
+  //       }
+  //       return line;
+  //     },
+  //   }),
+  // },
   paths: {
     sources: "./src",
     cache: "./cache_hardhat",

