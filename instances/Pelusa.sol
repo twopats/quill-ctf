@@ -19,21 +19,17 @@ contract Pelusa {
 
     function passTheBall() external {
         require(msg.sender.code.length == 0, "Only EOA players");
-        require(uint256(uint160(msg.sender)) % 100 == 10, "not allowed");
-
         player = msg.sender;
     }
 
     function isGoal() public view returns (bool) {
-        // expect ball in owners posession
         return IGame(player).getBallPossesion() == owner;
     }
 
     function shoot() external {
         require(isGoal(), "missed");
-				/// @dev use "the hand of god" trick
         (bool success, bytes memory data) = player.delegatecall(abi.encodeWithSignature("handOfGod()"));
         require(success, "missed");
-        require(uint256(bytes32(data)) == 22_06_1986);
+        require(uint256(bytes32(data)) == 22_06_1986, "data incorrect");
     }
 }

@@ -3,6 +3,7 @@ import { HardhatUserConfig } from "hardhat/config";
 import fs from "fs";
 // import "@tovarishfin/hardhat-yul";
 import "hardhat-deploy";
+import "dotenv";
 import "@nomicfoundation/hardhat-toolbox";
 
 function getRemappings() {
@@ -15,6 +16,13 @@ function getRemappings() {
 
 const config: HardhatUserConfig = {
   solidity: "0.8.17",
+  defaultNetwork: "localhost",
+  networks: {
+    // goerli: {
+    //   url: process.env.GOERLI_RPC as string,
+    //   accounts: [process.env.PK as string],
+    // },
+  },
   // preprocess: {
   //   eachLine: (hre) => ({
   //     transform: (line: string) => { //       if (line.match(/^\s*import /i)) {
