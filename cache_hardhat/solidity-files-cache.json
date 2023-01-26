@@ -174,8 +174,8 @@
       ]
     },
     "/home/msipat/code/quill-ctf/src/PelusaSolution.sol": {
-      "lastModificationDate": 1674700341724,
-      "contentHash": "35d0de9e4565e2ba790572e20a43202a",
+      "lastModificationDate": 1674702382742,
+      "contentHash": "ccf2fc5cd030b43bf652cfb73a4094c4",
       "sourceName": "src/PelusaSolution.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -218,8 +218,8 @@
       ]
     },
     "/home/msipat/code/quill-ctf/instances/Pelusa.sol": {
-      "lastModificationDate": 1674700023772,
-      "contentHash": "5d35fac8e9a39fe6f35a13b41d08fa39",
+      "lastModificationDate": 1674701003551,
+      "contentHash": "b3d48cfbd46fd3fd162b8306a035d384",
       "sourceName": "instances/Pelusa.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -261,8 +261,8 @@
       ]
     },
     "/home/msipat/code/quill-ctf/src/PelusaSolutionFactory.sol": {
-      "lastModificationDate": 1674700240022,
-      "contentHash": "c0eb465300277823b20fe9be3def16c9",
+      "lastModificationDate": 1674702250565,
+      "contentHash": "4a19c4088d3506c1bc130dcd5d96c259",
       "sourceName": "src/PelusaSolutionFactory.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -302,50 +302,6 @@
       ],
       "artifacts": [
         "PelusaSolutionFactory"
-      ]
-    },
-    "/home/msipat/code/quill-ctf/src/Solution.TrueXOR.sol": {
-      "lastModificationDate": 1674598993508,
-      "contentHash": "221b074ae8a83967b3b401624b693b32",
-      "sourceName": "src/Solution.TrueXOR.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "devdoc",
-                "userdoc",
-                "storageLayout",
-                "evm.gasEstimates"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": true
-          }
-        }
-      },
-      "imports": [
-        "../instances/TrueXOR.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "TrueXORSolution"
       ]
     },
     "/home/msipat/code/quill-ctf/instances/TrueXOR.sol": {
@@ -1173,6 +1129,50 @@
       ],
       "artifacts": [
         "IERC165"
+      ]
+    },
+    "/home/msipat/code/quill-ctf/src/TrueXORSolution.sol": {
+      "lastModificationDate": 1674703324115,
+      "contentHash": "221b074ae8a83967b3b401624b693b32",
+      "sourceName": "src/TrueXORSolution.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../instances/TrueXOR.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TrueXORSolution"
       ]
     }
   }
