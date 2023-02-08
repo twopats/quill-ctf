@@ -1,14 +1,16 @@
 ### CollatzPuzzle
+
 Solution by 2pats.eth
 
 ### Submission TX's
-1) Link to tx calling callMe() of CTF contract https://goerli.etherscan.io/tx/0xe5bbd522936bd11614ad960ffb1683c219af6537ecefd9a718d2ffb6cde5be01
 
-2) tx creating my contract on goerli: https://goerli.etherscan.io/tx/0xbb5e82a35a4b9f41c05c31f0741e282bc0e72c9853bdd10361c3fdbe44d23b8b
+1. Link to tx calling callMe() of CTF contract https://goerli.etherscan.io/tx/0xe5bbd522936bd11614ad960ffb1683c219af6537ecefd9a718d2ffb6cde5be01
 
-3) solution contract address `0x2746E405A7a670f290f085bF7e5466BcB2FcbeE31`
+2. tx creating my contract on goerli: https://goerli.etherscan.io/tx/0xbb5e82a35a4b9f41c05c31f0741e282bc0e72c9853bdd10361c3fdbe44d23b8b
 
-4) my EOA: `0xf4CE225b2beaFA65CC155a9dE1B1a41FF5EB3B61`
+3. solution contract address `0x2746E405A7a670f290f085bF7e5466BcB2FcbeE31`
+
+4. my EOA: `0xf4CE225b2beaFA65CC155a9dE1B1a41FF5EB3B61`
 
 ### Overview
 
@@ -40,29 +42,28 @@ deploy bytecode = intialization + runtime code
 **note, this solution uses RETURNDATASIZE to push 0 to the stack, which costs lower gas than PUSH1 0x00
 ```
 
-
 ### Runtime Opcode Solution Walkthrough
 
 ```
 [00]	PUSH1	04
-[02]	CALLDATALOAD	
+[02]	CALLDATALOAD
 get "n" from calldata with offset 4 (to skip 4bytes of the function selector), in our case is uint256 from the CTF contract, variable "n" in its source code, coming from inside the callMe() func
 
 
 [03]	PUSH1	02
 push value 2 (in order to use for modulo division of the if statement of collatzIteration())
 
-[05]	DUP2	
+[05]	DUP2
 DUP2, gives us a copy of n, saving the original n for future use
 
-[06]	MOD	
+[06]	MOD
 perform (n % 2), mathematically pushes only either 0 or 1 to the stack, this is useful later on when deciding which value to return
 
 [07]	DUP2
 DUP the original calldata value again
 
 [08]	PUSH1	03
-[0a]	MUL	
+[0a]	MUL
 [0b]	PUSH1	01
 [0d]	ADD
 perform 3n + 1
@@ -70,34 +71,35 @@ perform 3n + 1
 [0e]	DUP2
 reference our isOdd value in the stack, (the 0 or 1 value from our modulo condition)
 
-[0f]	MUL	
+[0f]	MUL
 if n is even, multiply by 0 effectively throwing away the 3n + 1  value
-[10]	SWAP2	
+[10]	SWAP2
 
 [11]	PUSH1	01
-[13]	SHR	
+[13]	SHR
 calculate n / 2, save to stack
 
-[14]	SWAP1	
+[14]	SWAP1
 [15]	ISZERO
 [16]	MUL
 if n is odd, multiply by 0 effectively throwing away the n / 2 value
 
-[17]	ADD	
+[17]	ADD
 this operation clears the stack by adding 0
 
 
-[18]	RETURNDATASIZE	
+[18]	RETURNDATASIZE
 [19]	MSTORE
 store return value at pos 0 in memory
 
-[1a]	MSIZE	
-[1b]	RETURNDATASIZE	
-[1c]	RETURN	
+[1a]	MSIZE
+[1b]	RETURNDATASIZE
+[1c]	RETURN
 return MSIZE value at position0 of memory
 ```
 
 ### Deriving the initialization bytecode
+
 Our initialization bytecode is 12 bytes long and needs to know the length of the runtime bytecode
 
 ```
@@ -108,7 +110,7 @@ push length of run our time bytecode (29 bytes)
 push position at which this runtime bytecode starts (position 12)
 
 [04]	PUSH1	00
-[06]	CODECOPY	
+[06]	CODECOPY
 code copy to position 0 in memory
 
 [07]	PUSH1	1d

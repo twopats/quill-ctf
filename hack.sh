@@ -1,7 +1,12 @@
 #!/bin/bash
 
 source .env
-forge script ./script/Deploy.s.sol --private-key $HH1PK --rpc-url http://127.0.0.1:8545/ --broadcast    
+
+# forge script ./script/Deploy.s.sol --private-key $HH1PK --rpc-url http://127.0.0.1:8545/ --broadcast    
+
+# cast send --from $HH1ADDRESS --create 73f4CE225b2beaFA65CC155a9dE1B1a41FF5EB3B6160015573e7f1725e7734ce288f8367e1bb143e90bb3f051260005560016002556016604160003960166000f360003560E01c801560029091100154602052602059f3
+
+cast send --from $HH1ADDRESS 0xe7f1725e7734ce288f8367e1bb143e90bb3f0512 "open(address)" 0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0
 # cast storage $PELUSA_FACTORY_ADDRESS 0
 # forge create ./src/PelusaSolutionFactory.sol:PelusaSolutionFactory --private-key $HH1PK 
 # forge create ./instances/TrueXOR.sol:TrueXOR --private-key $HH1PK 

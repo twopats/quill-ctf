@@ -1219,8 +1219,8 @@
       ]
     },
     "/home/msipat/code/quill-ctf/src/WETH10Solution.sol": {
-      "lastModificationDate": 1675289317834,
-      "contentHash": "f7cac2c784708558667fb2dfe7180c2f",
+      "lastModificationDate": 1675812987734,
+      "contentHash": "6c89d49dc8d06f5d739a591aa820e505",
       "sourceName": "src/WETH10Solution.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -1252,15 +1252,9 @@
           }
         }
       },
-      "imports": [
-        "../instances/WETH10.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "WETH10Solution"
-      ]
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
     },
     "/home/msipat/code/quill-ctf/instances/WETH10.sol": {
       "lastModificationDate": 1675288947003,
@@ -1481,6 +1475,44 @@
       "artifacts": [
         "IERC20Metadata"
       ]
+    },
+    "/home/msipat/code/quill-ctf/src/GateSolution.sol": {
+      "lastModificationDate": 1675812942014,
+      "contentHash": "e6ec01bc129ab98f520b1c2903c1d059",
+      "sourceName": "src/GateSolution.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": []
     }
   }
 }
